@@ -380,19 +380,6 @@ const MainNavigator = ({ user }) => {
 
 export default MainNavigator;
 ```
-
-### 5.3 Add Services
-
-Copy the `LandmarkService.js` and `UserService.js` files I created earlier into `src/services/`
-
-### 5.4 Add MapScreen
-
-Copy the `MapScreen.js` file I created earlier into `src/screens/`
-
-### 5.5 Update `App.js`
-
-Copy the `App.js` file I created earlier to the root directory
-
 ---
 
 ## 🗝️ Step 6: Get Google Maps API Key
@@ -444,7 +431,7 @@ npm run android
 
 ---
 
-## 🧪 Step 8: Test the App
+## 🧪 Step 8: The App
 
 1. **Sign up** with email and password
 2. **Allow location permissions** when prompted
@@ -488,13 +475,6 @@ npm run android
 ### Firebase Connection Issues
 - Verify `google-services.json` (Android) or `GoogleService-Info.plist` (iOS) is in correct location
 - Rebuild the app after adding Firebase config files
-- Check Firebase project settings match your bundle ID/package name
-
-### No Landmarks Showing
-- Ensure you've run the landmark importer and uploaded to Firebase
-- Check Firestore rules allow read access
-- Check console for errors: `npx react-native log-ios` or `npx react-native log-android`
-
 ---
 
 ## 📊 Performance Tips
@@ -524,22 +504,7 @@ firestore().settings({
   // ... other props
 />
 ```
-
 ---
-
-## 🚀 Next Steps
-
-1. **Add ProfileScreen** - Show user stats, rank progress, visited landmarks
-2. **Add LeaderboardScreen** - Top users by XP
-3. **Add Search** - Search landmarks by name
-4. **Add Filters** - Filter by landmark type
-5. **Add Achievements** - Badges for milestones
-6. **Add Social Features** - Friends, sharing
-7. **Add Photos** - Upload photos at landmarks
-8. **Add Offline Mode** - Download landmarks for offline use
-
----
-
 ## 📱 Building for Production
 
 ### iOS
