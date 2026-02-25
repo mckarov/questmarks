@@ -1,0 +1,35 @@
+# Firebase credentials - NEVER commit!
+serviceAccountKey.json
+GoogleService-Info.plist
+google-services.json
+
+# Generated data
+landmarks.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node modules
+node_modules/
+
+# iOS
+ios/Pods/
+ios/build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Android
+android/app/build/
+android/.gradle/
+*.apk
+
+# Xcode
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# Environment
+.env
+.env.local
