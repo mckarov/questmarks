@@ -2,7 +2,56 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import json
 import time
-from geohash import encode as geohash_encode
+
+# Use python-geohash (install: pip install python-geohash)
+try:
+    import Geohash as geohash
+    def geohash_encode(lat, lng, precision=9):
+        return geohash.encode(lat, lng, precision=precision)
+except ImportError:
+    # Fallback to geohash2 if python-geohash not available
+    try:
+        import geohash2
+        def geohash_encode(lat, lng, precision=9):
+            return geohash2.encode(lat, lng, precision=precision)
+    except ImportError:
+        # Manual implementation if no library available
+        print("WARNING: No geohash library found. Using basic implementation.")
+        def geohash_encode(lat, lng, precision=9):
+            # Simple geohash implementation
+            base32 = '0123456789bcdefghjkmnpqrstuvwxyz'
+            lat_range = [-90.0, 90.0]
+            lng_range = [-180.0, 180.0]
+            geohash_str = []
+            bits = 0
+            bit = 0
+            even = True
+            
+            while len(geohash_str) < precision:
+                if even:
+                    mid = (lng_range[0] + lng_range[1]) / 2
+                    if lng > mid:
+                        bit |= (1 << (4 - bits))
+                        lng_range[0] = mid
+                    else:
+                        lng_range[1] = mid
+                else:
+                    mid = (lat_range[0] + lat_range[1]) / 2
+                    if lat > mid:
+                        bit |= (1 << (4 - bits))
+                        lat_range[0] = mid
+                    else:
+                        lat_range[1] = mid
+                
+                even = not even
+                bits += 1
+                
+                if bits == 5:
+                    geohash_str.append(base32[bit])
+                    bits = 0
+                    bit = 0
+            
+            return ''.join(geohash_str)
 
 class FirebaseLandmarkUploader:
     """
