@@ -1,0 +1,17 @@
+[
+  {"id": 1, "name": "Eiffel Tower", "lat": 48.8584, "lng": 2.2945, "type": "UNESCO", "country": "France"},
+  {"id": 2, "name": "Colosseum", "lat": 41.8902, "lng": 12.4922, "type": "UNESCO", "country": "Italy"},
+  {"id": 3, "name": "Big Ben", "lat": 51.5007, "lng": -0.1246, "type": "NATIONAL", "country": "UK"},
+  {"id": 4, "name": "Statue of Liberty", "lat": 40.6892, "lng": -74.0445, "type": "NATIONAL", "country": "USA"},
+  {"id": 5, "name": "Sydney Opera House", "lat": -33.8568, "lng": 151.2153, "type": "NATIONAL", "country": "Australia"},
+  {"id": 6, "name": "Taj Mahal", "lat": 27.1751, "lng": 78.0421, "type": "WONDER", "country": "India"},
+  {"id": 7, "name": "Great Wall of China", "lat": 40.4319, "lng": 116.5704, "type": "WONDER", "country": "China"},
+  {"id": 8, "name": "Machu Picchu", "lat": -13.1631, "lng": -72.5450, "type": "WONDER", "country": "Peru"},
+  {"id": 9, "name": "Christ the Redeemer", "lat": -22.9519, "lng": -43.2105, "type": "WONDER", "country": "Brazil"},
+  {"id": 10, "name": "Brandenburg Gate", "lat": 52.5163, "lng": 13.3777, "type": "NATIONAL", "country": "Germany"},
+  {"id": 11, "name": "Arc de Triomphe", "lat": 48.8738, "lng": 2.2950, "type": "SEMI_LOCAL", "country": "France"},
+  {"id": 12, "name": "Sagrada Familia", "lat": 41.4036, "lng": 2.1744, "type": "UNESCO", "country": "Spain"},
+  {"id": 13, "name": "Golden Gate Bridge", "lat": 37.8199, "lng": -122.4783, "type": "NATIONAL", "country": "USA"},
+  {"id": 14, "name": "Times Square", "lat": 40.7580, "lng": -73.9855, "type": "LOCAL", "country": "USA"},
+  {"id": 15, "name": "Central Park", "lat": 40.7829, "lng": -73.9654, "type": "REGIONAL", "country": "USA"}
+]

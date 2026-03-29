@@ -1,0 +1,27 @@
+{
+  "name": "questmarks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QuestMarks core MVP - a gamified tourist exploration app built with React Native.",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "react-native lint"
+  },
+  "dependencies": {
+    "@react-native-firebase/app": "^23.8.3",
+    "@react-native-firebase/auth": "^23.8.3",
+    "@react-native-firebase/firestore": "^23.8.3",
+    "react": "19.2.3",
+    "react-native": "0.83.1",
+    "react-native-geolocation-service": "^5.3.1"
+  },
+  "devDependencies": {
+    "@react-native/babel-preset": "0.83.1"
+  },
+  "engines": {
+    "node": ">=20.19.4"
+  }
+}
+
