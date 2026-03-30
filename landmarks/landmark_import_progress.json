@@ -1,0 +1,17 @@
+{
+  "completed_sources": [
+    "geofabrik:afghanistan",
+    "geofabrik:albania",
+    "geofabrik:algeria",
+    "geofabrik:american-oceania",
+    "geofabrik:andorra",
+    "geofabrik:angola",
+    "geofabrik:antarctica",
+    "geofabrik:argentina",
+    "geofabrik:armenia"
+  ],
+  "failed_sources": [],
+  "landmark_count": 52800,
+  "next_landmark_id": 52801,
+  "saved_at": "2026-03-31 00:09:29"
+}
