@@ -21,21 +21,6 @@ QuestMarks is a React Native exploration app built around landmark discovery, pr
 - `landmark_importer.py`, `firebase_uploader.py`: landmark import and upload utilities
 - `data/`: static data used by the landmark pipeline
 
-## Development
-
-```bash
-npm install
-npm start
-npm run android
-```
-
-For iOS, run CocoaPods first:
-
-```bash
-cd ios
-pod install
-```
-
 ## Notes
 
 - Firebase config files are intentionally ignored and should not be committed.
